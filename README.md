@@ -175,17 +175,13 @@ This study underscores the importance of understanding the intersection of wildf
 
 The decision to use the SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous Regressors) model in this project was based on its suitability for the specific characteristics of the data and the goals of the analysis.
 
-1. Incorporating Seasonality:
-
-Unlike ARIMA, SARIMAX accounts for seasonal patterns, which are a significant feature of the data in this project. For example, park visitor counts exhibit strong seasonal trends, with higher numbers during summer months and lower counts during winter.
+1. Incorporating Seasonality: Unlike ARIMA, SARIMAX accounts for seasonal patterns, which are a significant feature of the data in this project. For example, park visitor counts exhibit strong seasonal trends, with higher numbers during summer months and lower counts during winter.
 Similarly, wildfire activity often peaks during specific seasons due to dry conditions, making seasonality an essential factor in the modeling process.
 Exogenous Variables:
 
 2. SARIMAX allows the inclusion of exogenous variables, which are external predictors that might influence the dependent variable. While this project primarily focuses on the time series itself, the capability to integrate additional factors (like smoke estimates influencing visitor counts) made SARIMAX more flexible and future-proof.
 
-3. Handling of Irregular Fluctuations:
-
-SARIMAX models the autoregressive (AR) and moving average (MA) components more robustly when combined with seasonal patterns. Given the fluctuations in visitor counts and smoke estimates, SARIMAX was better suited to capture these dependencies.
+3. Handling of Irregular Fluctuations: SARIMAX models the autoregressive (AR) and moving average (MA) components more robustly when combined with seasonal patterns. Given the fluctuations in visitor counts and smoke estimates, SARIMAX was better suited to capture these dependencies.
 
 Why Not Other Models?:
 
