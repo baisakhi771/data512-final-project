@@ -52,7 +52,7 @@ The analysis relied on two main datasets:
 
 ---
 
-### API and Documentation
+## **API and Documentation**
 Air quality data was required to assess the performance of the smoke estimate created. This data was obtained from the [US Environmental Protection Agency (EPA) Air Quality Service (AQS) API](https://aqs.epa.gov/aqsweb/documents/data_api.html). The AQS API provides historical air quality data but does not support real-time monitoring. The [API documentation](https://aqs.epa.gov/aqsweb/documents/data_api.html) offers detailed descriptions of various parameters and examples of API calls.
 
 The US EPA was established in the early 1970s, but standardized monitoring with quality assurance procedures only began in the 1980s. As a result, many counties have air quality data starting between 1983 and 1988, while some counties still lack monitoring stations.
@@ -62,7 +62,7 @@ Additional details about the Air Quality System can be found in the [EPA AirData
 
 ---
 
-### Intermediate Data Files: 
+## **Intermediate Data Files** 
 
 During the course of this study, mainly three intermediate data files were created (two other redundant files are also generated but not used later for analysis):
 
@@ -114,7 +114,7 @@ During the course of this study, mainly three intermediate data files were creat
 
 ---
 
-### Reproducibility
+## **Reproducibility**
 
 To ensure the reproducibility of this project, all workflows and analyses have been meticulously documented and implemented in a well-organized directory structure. The project includes clearly labeled directories for raw data, processed data, scripts, Jupyter notebooks, and results, ensuring a logical progression from data retrieval to final outputs. All datasets used are either included in the repository (where licensing permits) or accessible via publicly available links, with detailed instructions for downloading and preprocessing provided in the documentation.  Automation scripts handle repetitive tasks like data cleaning, smoke estimation, and model training, simplifying the replication of results. Each Jupyter notebook is modular and well-commented, making the analysis pipeline transparent and easy to follow. Version control is managed through Git, ensuring that changes are traceable and reversible, with unnecessary files excluded via a .gitignore file. For further ease of reproducibility, a reproducibility guide has been included, detailing steps to get data, process data, run analyses, and regenerate visualizations. This ensures that anyone with access to the repository can replicate the findings, validate the methodologies, and extend the analysis with minimal effort.
 
@@ -131,7 +131,7 @@ To ensure the reproducibility of this project, all workflows and analyses have b
 
 ---
 
-### Known Issues or Assumptions:
+## **Known Issues or Assumptions**
 
 Both the Wildfire and AQI datasets used in this analysis were developed based on several key assumptions to ensure consistency and relevance to the study objectives. Below are the key assumptions and the rationale behind them:
 
