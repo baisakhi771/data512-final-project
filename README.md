@@ -169,3 +169,30 @@ These assumptions were made to maintain consistency across datasets, ensure data
 ## **Conclusion**
 This study underscores the importance of understanding the intersection of wildfires and tourism, especially in wildfire-prone regions like California. By analyzing historical trends and forecasting future scenarios, this project provides actionable insights for park managers, policymakers, and local communities to adapt and thrive in the face of increasing wildfire activity.
 
+---
+
+## **Extra Note - Why SARIMAX?**
+
+The decision to use the SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous Regressors) model in this project was based on its suitability for the specific characteristics of the data and the goals of the analysis.
+
+1. Incorporating Seasonality:
+
+Unlike ARIMA, SARIMAX accounts for seasonal patterns, which are a significant feature of the data in this project. For example, park visitor counts exhibit strong seasonal trends, with higher numbers during summer months and lower counts during winter.
+Similarly, wildfire activity often peaks during specific seasons due to dry conditions, making seasonality an essential factor in the modeling process.
+Exogenous Variables:
+
+2. SARIMAX allows the inclusion of exogenous variables, which are external predictors that might influence the dependent variable. While this project primarily focuses on the time series itself, the capability to integrate additional factors (like smoke estimates influencing visitor counts) made SARIMAX more flexible and future-proof.
+
+3. Handling of Irregular Fluctuations:
+
+SARIMAX models the autoregressive (AR) and moving average (MA) components more robustly when combined with seasonal patterns. Given the fluctuations in visitor counts and smoke estimates, SARIMAX was better suited to capture these dependencies.
+
+Why Not Other Models?:
+
+- ARIMA: While ARIMA models time series data effectively, it does not natively handle seasonal patterns. Incorporating seasonality manually in ARIMA would have been less efficient and less interpretable.
+
+- Exponential Smoothing (ETS): Exponential Smoothing models are suitable for trend and seasonality but do not incorporate autoregressive or moving average components, making them less comprehensive for the complexity of the data.
+
+- Machine Learning Models (e.g., LSTM): These are more complex and require larger datasets and more computational resources. While they can capture nonlinearities, their application would have been overkill for the objectives of this project.
+
+
