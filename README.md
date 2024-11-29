@@ -47,8 +47,23 @@ The analysis relied on two main datasets:
 
 2. **Tourism Data**:
    - **Source** - **[Tourism Data](https://irma.nps.gov/Stats/Reports/Park/YOSE)**: (Please select "Recreation Visits By Month (1979 - Current Calendar Year" option from the list) National Park Service Visitor Use Statistics (10 National Parks with 650 miles of Palmdale, California are considered). This [link](https://irma.nps.gov/Stats/SSRSReports/Park%20Specific%20Reports/Recreation%20Visitors%20By%20Month%20(1979%20-%20Last%20Calendar%20Year)?Park=REDW) gives the csv report for each park visitor statistics, the park name and years needs to be selected accordingly.
-   - **Description**: This dataset provides annual and monthly visitor counts for national parks in California, broken down by park and type of visit (e.g., recreational, camping).
+   - **Description**: This dataset provides annual and monthly visitor counts for national parks in California, broken down by park. Data is first collected for each park seperately and then combined for further analysis.
    - **Usage**: Visitor data helps analyze the correlation between smoke exposure and tourism patterns, and supports trend analysis over time.
+
+**10 National Parks considered in our project are:**
+
+| National Park                 | Approximate Distance from Palmdale (miles) |
+|-------------------------------|--------------------------------------------|
+| **Santa Monica Mountains**    | 66                                     |
+| **Joshua Tree**               | 142                                       |
+| **Channel Islands**           | 150                                     |
+| **Death Valley**              | 157                                       |
+| **Sequoia**                   | 192                                       |
+| **Kings Canyon**              | 222                                       |
+| **Pinnacles**                 | 256                                       |
+| **Yosemite**                  | 262                                       |
+| **Lassen Volcanic**           | 552                                       |
+| **Redwood National and State Parks** | 673                                |
 
 ---
 
