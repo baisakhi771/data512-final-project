@@ -114,6 +114,23 @@ During the course of this study, mainly three intermediate data files were creat
 
 ---
 
+### Reproducibility
+
+To ensure the reproducibility of this project, all workflows and analyses have been meticulously documented and implemented in a well-organized directory structure. The project includes clearly labeled directories for raw data, processed data, scripts, Jupyter notebooks, and results, ensuring a logical progression from data retrieval to final outputs. All datasets used are either included in the repository (where licensing permits) or accessible via publicly available links, with detailed instructions for downloading and preprocessing provided in the documentation.  Automation scripts handle repetitive tasks like data cleaning, smoke estimation, and model training, simplifying the replication of results. Each Jupyter notebook is modular and well-commented, making the analysis pipeline transparent and easy to follow. Version control is managed through Git, ensuring that changes are traceable and reversible, with unnecessary files excluded via a .gitignore file. For further ease of reproducibility, a reproducibility guide has been included, detailing steps to get data, process data, run analyses, and regenerate visualizations. This ensures that anyone with access to the repository can replicate the findings, validate the methodologies, and extend the analysis with minimal effort.
+
+#### **Reproducibility Guide**
+
+1. Start by getting data from the above mentioned data sources.
+2. Download the complete codebase from this git repository.
+3. Start your python kernel to run jupyter notebooks.
+4. Run Analysis/Wildfire_Analysis_Data_Acquisition.ipynb notebook completely for data fetching and csv conversions.
+5. Run Analysis/Wildfire_Analysis_Data_Cleaning.ipynb notebook for data cleaning and it will generate the cleaned data dile in Intermediate_files folder for further usage. All data references are made using relative path so that it doesnt cause any issues later.
+6. Run Analysis/Wildfire_Analysis_Data_Analysis_and_Prediction.ipynb to get smoke estimates and its predictions.
+7. Run Analysis/Wildfire_and_Tourism_Data_Analysis_and_Prediction.ipynb for Smoke and Tourism correlations.
+8. Check all output vizualizations generated inside notebook or from Results folder.
+
+---
+
 ### Known Issues or Assumptions:
 
 Both the Wildfire and AQI datasets used in this analysis were developed based on several key assumptions to ensure consistency and relevance to the study objectives. Below are the key assumptions and the rationale behind them:
